@@ -536,9 +536,6 @@ unsigned int HachmeiWindow::DateConsider()
 // Consider the first, second and middle names to numerologic number
 unsigned int HachmeiWindow::FIOConsider()
 {
-    QTextCodec *RusCodec = QTextCodec::codecForName("utf-8"); // make codec
-    QTextCodec::setCodecForCStrings(RusCodec); // Installing codec
-
     //-------------Second Name Considering--------------
     QString secondName = ui->lineEdit->text();
     secondName = secondName.trimmed().simplified().toLower();
